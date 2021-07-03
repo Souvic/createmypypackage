@@ -65,11 +65,12 @@ def uploadpackage():
         dir_ = [i for i in os.listdir() if os.path.isdir(i)][0]
         os.chdir(dir_)
         os.system(f"rm -rf ./dist")
-        if(input("Are you uploading this package to PyPi for the first time? Yes/No:").lower().strip()=="no"):
+        ft_=input("Are you uploading this package to PyPi for the first time? Yes/No:").lower().strip()=="no"
+        if():
             with open("./setup.cfg","r") as f:
                 zz=f.read().split("\n")
             
-            print(f"The old version number is : {zz[2][len("version = "):]}")
+            print(f"The old version number is : {zz[2][len('version = '):]}")
             new_version_number=input("Choose a new version number: ")
             zz[2][len("version = "):]=new_version_number
             with open("./setup.cfg","r") as f:
@@ -77,7 +78,8 @@ def uploadpackage():
         os.system("python3 -m build")
         os.system("git add -A")
         os.system("git commit -m 'First commit in the new package'")
-        os.system(f"git tag v{new_version_number}")
+        if(ft_):
+            os.system(f"git tag v{new_version_number}")
         os.system("git push -u origin main")
         print("Updated github repo!")
         os.system("twine upload dist/*")
