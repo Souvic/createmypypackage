@@ -1,5 +1,5 @@
 # Makes python package creation easy again!
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/github/license/Souvic/createmypypackage)](https://opensource.org/licenses/MIT)
 [![Github All Releases](https://img.shields.io/github/downloads/huggingface/transformers/total.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/createmypypackage)]()
 [![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
