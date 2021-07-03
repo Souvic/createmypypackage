@@ -43,7 +43,7 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 1. Run the below code to submit to PyPi
 2. Input 1 at the first prompt.
 3. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
-## One code to create/upload/update them all
+# One code to create/upload/update them all
 ```
 python3 -m createmypypackage
 ```
