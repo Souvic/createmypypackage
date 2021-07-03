@@ -66,7 +66,7 @@ def uploadpackage():
         os.chdir(dir_)
         os.system(f"rm -rf ./dist")
         nft_=input("Are you uploading this package to PyPi for the first time? Yes/No:").lower().strip()=="no"
-        if():
+        if(nft_):
             with open("./setup.cfg","r") as f:
                 zz=f.read().split("\n")
             
