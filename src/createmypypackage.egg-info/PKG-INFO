@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: createmypypackage
-Version: 0.0.1
+Version: 0.0.2
 Summary: Provides a basic package structure
 Home-page: https://github.com/Souvic/createmypypackage.git
 Author: Souvic Chakraborty
@@ -20,13 +20,14 @@ License-File: LICENSE
 [![stars](https://img.shields.io/github/stars/Souvic/createmypypackage)]()
 [![Github All Releases](https://img.shields.io/github/downloads/huggingface/transformers/total.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/createmypypackage)]()
-[![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/package_creator/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/package_creator/?branch=main)
-[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
-[![Latest Stable Version](https://img.shields.io/github/v/release/Souvic/createmypypackage?include_prereleases)]()
-[![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
 [![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
 
+[![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/package_creator/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/package_creator/?branch=main)
+[![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
+[![Latest Stable Version](https://img.shields.io/github/v/release/Souvic/createmypypackage)]()
+
+[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
 
 ### Support me
 
@@ -75,10 +76,12 @@ python3 -m createmypypackage
 ```
 python3 -m createmypypackage 
 ```
-### Use keyring to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
-Paste the below code for that with your username. Give passtoken when prompted. 
+### Set up your $HOME/.pypirc file with the passtoken like this to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
+Create $HOME/.pypirc and paste the below code replacing only _yourpasstoken
 ```
-keyring set https://upload.pypi.org/legacy/ yourusername
+[pypi]
+  username = __token__
+  password = yourpasstoken
 ```
 
 ### Use git store password utility to avoid typing GitHub username and password everytime [Doc Link](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
