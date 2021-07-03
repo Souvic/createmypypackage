@@ -19,12 +19,11 @@ For simple packaging, one single file is enough.
 ### To make a new package:
 1. Run the below code to submit to PyPi
 2. Input 1 at the first prompt.
+3. Make necessary changes if you have to now on the github repo before submitting to PyPi(by following the upload instruction below)
 ## One code to create/upload/update them all
 ```
 python3 -m createmypypackage
 ```
-The above script creates a new package from your python files and uploads to github
-Make necessary changes if you have to now on the github repo before submitting to PyPi
 
 ### To update/upload a package:
 1. Make all necessary changes in the python files in the github repo
