@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: createmypypackage
-Version: 0.0.4
+Version: 0.0.5
 Summary: Provides a basic package structure
 Home-page: https://github.com/Souvic/createmypypackage.git
 Author: Souvic Chakraborty
@@ -57,25 +57,22 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 ```
 
 ## Example Usage
-### To make a new package:
-1. Run the below code to submit to PyPi
-2. Input yes at the first prompt.
-3. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
-# One code to create/upload/update them all
+### To make a new package and upload to github from a some/one python file(s):
+1. Run the below command.
+2. Input yes at the first prompt as you will be questioned.
+3. Follow the instructions that will appear.
+4. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
+# One command to create/upload/update them all
 ```
-python3 -m createmypypackage
+cmpp
 ```
+#### cmpp is shorthand of _createmypypackage
 
-### To update/upload a package:
-1. Make all necessary changes in the python files in the github repo
-2. Run the same code as above to submit to PyPi
+### To update/upload a package to PyPi which already has a GitHub repo:
+1. Make all necessary changes in the python files(location: src/packagename/) in the github repo.
+2. Run the command (cmpp) as written above to submit to PyPi
 3. Input no at the first prompt.
-4. Input 1 at the second prompt if you are uploading for the first time.
-5. Input 2 at the second prompt if you have already submitted once. Change the version in that case to a higher number when prompted.
-
-```
-python3 -m createmypypackage 
-```
+4. Follow the instructions that will appear.
 ### Set up your $HOME/.pypirc file with the passtoken like this to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
 Create $HOME/.pypirc and paste the below code replacing only _yourpasstoken
 ```
