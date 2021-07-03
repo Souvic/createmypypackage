@@ -19,7 +19,7 @@ Fun part: This package is also created by running the script located at src/crea
 To make a new package:
 
 ```
-python -m createmypypackage
+python3 -m createmypypackage
 ```
 The above script creates a new package from your python files and uploads to github
 Make necessary changes if you have to now on the github repo before submitting to PyPi
@@ -27,7 +27,7 @@ Make necessary changes if you have to now on the github repo before submitting t
 To update a package:
 
 ```
-python -m createmypypackage
+python3 -m createmypypackage
 ```
 
 
