@@ -19,7 +19,7 @@ For simple packaging, one single file is enough.
 ### To make a new package:
 1. Run the below code to submit to PyPi
 2. Input 1 at the first prompt.
-3. Make necessary changes if you have to (e.g. updating readme.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
+3. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
 ## One code to create/upload/update them all
 ```
 python3 -m createmypypackage
@@ -49,5 +49,5 @@ password=passtoken
 ## Important note:
 You can use
 [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content for your Readme.MD.
+to write your content for your README.md
 
