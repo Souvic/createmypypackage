@@ -10,10 +10,14 @@ For simple packaging, one single file is enough.
 > Fun part: This package is also created by running the script located at src/createmypypackage/\_\_init\_\_.py
 
 ## Install from PyPi
-```pip3 install createmypypackage```
+```
+pip3 install createmypypackage
+```
 
 ## Or Install from main branch
-```pip3 install git+https://github.com/Souvic/createmypypackage.git```
+```
+pip3 install git+https://github.com/Souvic/createmypypackage.git
+```
 
 ## Example Usage
 ### To make a new package:
