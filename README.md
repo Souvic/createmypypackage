@@ -41,7 +41,7 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 ## Example Usage
 ### To make a new package:
 1. Run the below code to submit to PyPi
-2. Input 1 at the first prompt.
+2. Input yes at the first prompt.
 3. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
 # One code to create/upload/update them all
 ```
@@ -51,7 +51,7 @@ python3 -m createmypypackage
 ### To update/upload a package:
 1. Make all necessary changes in the python files in the github repo
 2. Run the same code as above to submit to PyPi
-3. Input 2 at the first prompt.
+3. Input no at the first prompt.
 4. Input 1 at the second prompt if you are uploading for the first time.
 5. Input 2 at the second prompt if you have already submitted once. Change the version in that case to a higher number when prompted.
 
