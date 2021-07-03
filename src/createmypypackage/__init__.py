@@ -3,8 +3,8 @@ import subprocess
 import tempfile
 
 def exec(x):
-    if subprocess.run(x,shell=True).returncode!=0:
-        raise NameError('Execution failed!')
+    if os.system(x)!=0:
+        raise NameError('Look at above errors to understand why the execution failed!!')
         
 
 
