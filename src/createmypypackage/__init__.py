@@ -1,7 +1,11 @@
 import os
 import tempfile
 
-file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: "))
+file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: ").strip())
+if(input("Will you like to add more python files which are imported by the main file? Yes/No:").lower().strip()=="yes"):
+    extra_file_paths=[i for i in input("Give the location of extra_files seperated by space").split() if(i!="")]
+else:
+    extra_file_paths=[]
 with tempfile.TemporaryDirectory() as tmpdirname:
     os.chdir(tmpdirname)
     os.system("git clone https://github.com/Souvic/package_creator.git")
@@ -29,7 +33,8 @@ with tempfile.TemporaryDirectory() as tmpdirname:
     su=su.format(package_name=package_name,author_name=author_name,author_email=author_email,python_requires=python_requires,install_requires=install_requires,rep_url=rep_url)
     with open("./package_creator/setup.cfg","w") as f:
         f.write(su)
-    
+    for ii in extra_file_paths:
+        os.system(f"cp {ii} ./package_creator/src/package_name/")
     os.rename("./package_creator/src/package_name","./package_creator/src/"+package_name)
     
     #os.system("python3 -m twine upload --repository testpypi")
