@@ -3,7 +3,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/Souvic/createmypypackage/total.svg)]()
 
 [![Build Status](https://travis-ci.com/Souvic/createmypypackage.svg?branch=master)](https://travis-ci.com/phplicengine/createmypypackage)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/?branch=main)
 [![Latest Stable Version](https://img.shields.io/packagist/v/Souvic/createmypypackage?label=version)](https://packagist.org/packages/Souvic/createmypypackage)
 [![Total Downloads](https://img.shields.io/packagist/dt/Souvic/createmypypackage?color=blue)](https://packagist.org/packages/Souvic/createmypypackage)
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)](https://packagist.org/packages/Souvic/createmypypackage)
