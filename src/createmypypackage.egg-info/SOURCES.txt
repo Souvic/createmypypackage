@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/createmypypackage/__init__.py
+src/createmypypackage.egg-info/PKG-INFO
+src/createmypypackage.egg-info/SOURCES.txt
+src/createmypypackage.egg-info/dependency_links.txt
+src/createmypypackage.egg-info/top_level.txt
