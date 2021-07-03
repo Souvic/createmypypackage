@@ -101,10 +101,12 @@ def uploadpackage():
         exec("twine upload dist/*")
         print("Updated to PyPi!")
         
-if(input("Do you already have a github repo for the project? Yes/No:").lower().strip()=="yes"):
-    uploadpackage()
-else:
-    create_package()
+        
+if __name__=="__main__":
+    if(input("Do you already have a github repo for the project? Yes/No:").lower().strip()=="yes"):
+        uploadpackage()
+    else:
+        create_package()
         
     
        
