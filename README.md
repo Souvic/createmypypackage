@@ -1,4 +1,4 @@
-# Makes python package creation easy and fun!
+# Makes python package creation fun again!
 
 Most of the packages are simple and a collection of few functions or classes.
 We have created a package for that now that can create python packages, upload to github and distribute to pypi all in a single call.
