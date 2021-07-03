@@ -19,7 +19,7 @@ For simple packaging, one single file is enough.
 ### To make a new package:
 1. Run the below code to submit to PyPi
 2. Input 1 at the first prompt.
-
+## One code to create/upload/update them all
 ```
 python3 -m createmypypackage
 ```
