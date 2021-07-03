@@ -7,7 +7,7 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/Souvic/createmypypackage?label=version)](https://packagist.org/packages/Souvic/createmypypackage)
 [![Total Downloads](https://img.shields.io/packagist/dt/Souvic/createmypypackage?color=blue)](https://packagist.org/packages/Souvic/createmypypackage)
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)](https://packagist.org/packages/Souvic/createmypypackage)
-[![php](https://img.shields.io/packagist/php-v/Souvic/createmypypackage)](https://packagist.org/packages/Souvic/createmypypackage)
+[![python](https://img.shields.io/packagist/python/Souvic/createmypypackage)](https://packagist.org/packages/Souvic/createmypypackage)
 [![License](https://img.shields.io/packagist/l/Souvic/createmypypackage)](https://packagist.org/packages/Souvic/createmypypackage)
 
 
