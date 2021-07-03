@@ -41,7 +41,8 @@ python3 -m createmypypackage
 
 > P.S.: Use git store password utility to avoid typing GitHub password and username everytime
 > Paste the below code for that with your passtoken and username
-```git credential-store --file ~/.mysecretfilelocation store
+```
+git credential-store --file ~/.mysecretfilelocation store
 protocol=https
 host=github.com
 username=bob
