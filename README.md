@@ -4,7 +4,7 @@
 
 [![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/?branch=main)
-[![Latest Stable Version](https://img.shields.io/github/v/Souvic/createmypypackage?label=version)]()
+[![Latest Stable Version](https://img.shields.io/github/v/Souvic/createmypypackage?b=v0.0.1?label=version)]()
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
 [![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
 
