@@ -6,7 +6,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/?branch=main)
 [![Latest Stable Version](https://img.shields.io/packagist/v/Souvic/createmypypackage?label=version)]()
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
-[![python](https://img.shields.io/github/python/Souvic/createmypypackage)]()
+[![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
 
 
 ### Support me
