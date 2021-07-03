@@ -5,11 +5,11 @@
 [![PyPI](https://img.shields.io/pypi/v/createmypypackage)]()
 [![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/package_creator/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/package_creator/?branch=main)
-[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
-[![Latest Stable Version](https://img.shields.io/github/v/release/Souvic/createmypypackage?include_prereleases)]()
+
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
 [![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
-
+[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
+[![Latest Stable Version](https://img.shields.io/github/v/release/Souvic/createmypypackage?include_prereleases)]()
 
 ### Support me
 
