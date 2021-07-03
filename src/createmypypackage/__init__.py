@@ -73,11 +73,19 @@ def uploadpackage():
         if(nft_):
             with open("./setup.cfg","r") as f:
                 zz=f.read().split("\n")
+            if(zz[2].startswith("version")):
+                kindex=2
+            else:
+                for jkl in range(len(zz)):
+                    if(zz[jkl].startswith("version")):
+                        kindex=jkl
+                        break;
+                    
             
-            print(f"The old version number is : {zz[2][len('version = '):]}")
+            print(f"The old {zz[kindex]}")
             new_version_number=input("Choose a new version number: ")
-            zz[2][len("version = "):]=new_version_number
-            with open("./setup.cfg","r") as f:
+            zz[kindex]="version = "+new_version_number
+            with open("./setup.cfg","w") as f:
                 f.write("\n".join(zz))
         exec("python3 -m build")
         exec("git add -A")
