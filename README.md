@@ -6,8 +6,8 @@ We collect desired packagename, author name and a few info interactively and cre
 You can use multiple python scripts too.
 To use multiple scripts give a space seperated list when asked for file locations with main file (the file where all the functions and classes you want user to use is present) at the start.
 For simple packaging, one single file is enough.
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
+- [x] Lightweight
+- [x] Easiest to use with only one interactive command
 
 > Fun part: This package is also created by running the script located at src/createmypypackage/\_\_init\_\_.py
 
