@@ -3,7 +3,9 @@ import subprocess
 import tempfile
 
 def exec(x):
-    subprocess.check_output(x,shell=True)
+    if subprocess.run(x,shell=True).returncode!=0:
+        raise NameError('Execution failed!')
+        
 
 
 def create_package():
