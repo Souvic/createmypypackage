@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Github All Releases](https://img.shields.io/github/downloads/Souvic/createmypypackage/total.svg)]()
 
-[![Build Status](https://scrutinizer-ci.com/Souvic/createmypypackage.svg?branch=main)](https://scrutinizer-ci.com/Souvic/createmypypackage)
+[![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/?branch=main)
 [![Latest Stable Version](https://img.shields.io/packagist/v/Souvic/createmypypackage?label=version)]()
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
