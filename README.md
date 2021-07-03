@@ -1,4 +1,4 @@
-# Makes python package creation fun again!
+# Makes python package creation easy again!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Github All Releases](https://img.shields.io/github/downloads/Souvic/createmypypackage/total.svg)]()
 
