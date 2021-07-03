@@ -7,7 +7,7 @@ You can use multiple python scripts too.
 To use multiple scripts give a space seperated list when asked for file locations with main file (the file where all the functions and classes you want user to use is present) at the start.
 For simple packaging, one single file is enough.
 
-> Fun part: This package is also created by running the script located at src/createmypypackage/__init__.py
+> Fun part: This package is also created by running the script located at src/createmypypackage/\_\_init\_\_.py
 
 ## Install from PyPi
 ```pip3 install createmypypackage```
