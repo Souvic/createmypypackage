@@ -35,15 +35,19 @@ python3 -m createmypypackage
 ```
 python3 -m createmypypackage 
 ```
-#### Use keyring to save twine password to avoid typing password and username everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
+#### Use keyring to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
+Paste the below code for that with your username. Give passtoken when prompted. 
+```
+keyring set https://upload.pypi.org/legacy/ yourusername
+```
 
-#### Use git store password utility to avoid typing GitHub password and username everytime
+#### Use git store password utility to avoid typing GitHub username and password everytime [Doc Link](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 Paste the below code for that with your passtoken and username
 ```
 git credential-store --file ~/.mysecretfilelocation store
 protocol=https
 host=github.com
-username=bob
+username=yourusername
 password=passtoken
 ```
 ## Important note:
