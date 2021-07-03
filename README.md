@@ -1,5 +1,11 @@
 # Makes python package creation fun again!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### Support me
+
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/lukashimsel)
+
+
 Most of the packages are simple and a collection of few functions or classes.
 We have created a package for that now that can create python packages, upload to github and distribute to pypi all in a single call.
 We collect desired packagename, author name and a few info interactively and create the package from a single python file.
