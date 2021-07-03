@@ -102,7 +102,7 @@ def uploadpackage():
         print("Updated to PyPi!")
         
         
-if __name__=="__main__":
+def main():
     if(input("Do you already have a github repo for the project? Yes/No:").lower().strip()=="yes"):
         uploadpackage()
     else:
