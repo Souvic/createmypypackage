@@ -8,8 +8,9 @@
 
 [![Release date](https://img.shields.io/github/release-date/Souvic/createmypypackage)]()
 [![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
-[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
 [![Latest Stable Version](https://img.shields.io/github/v/release/Souvic/createmypypackage?include_prereleases)]()
+
+[![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSouvic%2Fcreatemypypackage)]()
 
 ### Support me
 
