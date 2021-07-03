@@ -80,8 +80,10 @@ def uploadpackage():
         os.system("git commit -m 'First commit in the new package'")
         if(nft_):
             os.system(f"git tag v{new_version_number}")
+            os.system(f"git push origin  v{new_version_number}")
         else:
-            os.system(f"git tag v0.0.1")
+            os.system("git tag v0.0.1")
+            os.system("git push origin  v0.0.1")
         os.system("git push -u origin main")
         print("Updated github repo!")
         os.system("twine upload dist/*")
