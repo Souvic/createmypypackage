@@ -20,7 +20,7 @@ def check_(prompt_,yes_="yes",no_="no"):
 
 def create_package():
     file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: ").strip())
-    if(check_("Will you like to add more python files which are imported by the main file? Yes/No:")):
+    if(check_("Will you like to add more python files which are imported by the main file? yes/no: ")):
         extra_file_paths=[i for i in input("Give the location of extra_files seperated by space").split() if(i!="")]
     else:
         extra_file_paths=[]
@@ -82,7 +82,7 @@ def uploadpackage():
         os.chdir(dir_)
         exec(f"rm -rf ./dist")
         
-        print("Your package requires atleast these packages listed in requirements.txt and install_requires part of setup.cfg file.")
+        print("\n\n\n_____________________________\n\nYour package requires atleast these packages listed in requirements.txt and install_requires part of setup.cfg file.")
         print("These are listed by pipreqs")
         exec("pipreqs --print ./")
         print("\n\nThese are the packages listed in requirements.txt : ")
@@ -102,9 +102,9 @@ def uploadpackage():
         
         
         print("Abort now and update requirements.txt setup.cfg file(install_requires and python_requires) if you notice any discrepency")
-        if(check_("Abort/continue? Write 'abort' to 'abort' or 'continue' to go ahead uploading with current settings","abort","continue")):
+        if(check_("Abort/continue? Write 'abort' to stop exeution or 'continue' to go ahead uploading with current settings : ","abort","continue")):
             raise NameError('Aborted as you wished!! \nMake necessary changes on the repo now.')
-        nft_=check_("Are you uploading this package to PyPi for the first time? Yes/No:","no","yes")
+        nft_=check_("Are you uploading this package to PyPi for the first time? yes/no: ","no","yes")
         if(nft_):
             with open("./setup.cfg","r") as f:
                 zz=f.read().split("\n")
@@ -138,7 +138,7 @@ def uploadpackage():
         
         
 def main():
-    if(check_("Do you already have a github repo for the project? Yes/No:")):
+    if(check_("Do you already have a github repo for the project? yes/no: ")):
         uploadpackage()
     else:
         create_package()
