@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: createmypypackage
-Version: 0.0.7
-Summary: Provides a basic package structure
+Version: 0.0.8
+Summary: One command simplest way to make and upload a python package!
 Home-page: https://github.com/Souvic/createmypypackage.git
 Author: Souvic Chakraborty
 Author-email: chakra.souvic@gmail.com
