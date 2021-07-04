@@ -24,7 +24,7 @@ def format_readme(rep_u):
     with open("./package_creator/README.md","r") as f:
         readme=f.read()
     readme=readme.format(user_name_=user_name_,repo_or_package_name_=repo_or_package_name_)
-    with open("./package_creator/README.MD","w") as f:
+    with open("./package_creator/README.md","w") as f:
         f.write(readme)
     
 def create_package():
