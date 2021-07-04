@@ -40,11 +40,13 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 ```
 
 ## Example Usage
+
 ### To make a new package and upload to github from a some/one python file(s):
-1. Run the below command.
+1. Run the command _cmpp (and just follow the interactive framework forgetting the lines\[2,3,4\] written below)
 2. Input yes at the first prompt as you will be questioned.
 3. Follow the instructions that will appear.
 4. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
+
 # One command to create/upload/update them all
 ```
 cmpp
@@ -54,7 +56,7 @@ cmpp
 
 ### To update/upload a package to PyPi which already has a GitHub repo:
 1. Make all necessary changes in the python files(location: src/packagename/) in the github repo.
-2. Run the command (cmpp) as written above to submit to PyPi
+2. Run the command _cmpp (and just follow the interactive framework forgetting the lines\[2,3,4\] written below)
 3. Input no at the first prompt.
 4. Follow the instructions that will appear.
 ### Set up your $HOME/.pypirc file with the passtoken like this to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
