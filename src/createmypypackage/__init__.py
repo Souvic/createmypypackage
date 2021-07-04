@@ -102,7 +102,7 @@ def uploadpackage():
         
         
         print("Abort now and update requirements.txt setup.cfg file(install_requires and python_requires) if you notice any discrepency")
-        if(check_("","abort","continue")):
+        if(check_("Abort/continue? Write 'abort' to 'abort' or 'continue' to go ahead uploading with current settings","abort","continue")):
             raise NameError('Aborted as you wished!! \nMake necessary changes on the repo now.')
         nft_=check_("Are you uploading this package to PyPi for the first time? Yes/No:","no","yes")
         if(nft_):
