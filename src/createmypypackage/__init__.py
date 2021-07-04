@@ -5,17 +5,28 @@ def exec(x):
     if os.system(x)!=0:
         raise NameError('Look at above errors to understand why the execution failed!!')
         
-
+def check_(prompt_,yes_="yes",no_="no"):
+    yes1_=yes_.lower().strip()
+    no1_=no_.lower().strip()
+    while(True):
+        i_=input(prompt_).lower().strip()
+        if(i_==yes1_):
+            return(True)
+        elif(i_==no1_):
+            return(False)
+        else:
+            print("Your input is neither {yes_} nor {no_}. TRY again carefully..")
+        
 
 def create_package():
     file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: ").strip())
-    if(input("Will you like to add more python files which are imported by the main file? Yes/No:").lower().strip()=="yes"):
+    if(check_("Will you like to add more python files which are imported by the main file? Yes/No:")):
         extra_file_paths=[i for i in input("Give the location of extra_files seperated by space").split() if(i!="")]
     else:
         extra_file_paths=[]
     with tempfile.TemporaryDirectory() as tmpdirname:
         os.chdir(tmpdirname)
-        exec("git clone https://github.com/Souvic/package_creator.git")
+        exec("git clone -q https://github.com/Souvic/package_creator.git")
         exec("rm -rf ./package_creator/.git")
 
         package_name=input("Choose name of this package please: ")
@@ -66,11 +77,34 @@ def uploadpackage():
         rep_url=input("Copy-paste the link of the github repo of the project please: ")
         if(not rep_url.lower().endswith(".git")):
             rep_url=rep_url+".git"
-        exec(f"git clone {rep_url}")
+        exec(f"git clone -q {rep_url}")
         dir_ = [i for i in os.listdir() if os.path.isdir(i)][0]
         os.chdir(dir_)
         exec(f"rm -rf ./dist")
-        nft_=input("Are you uploading this package to PyPi for the first time? Yes/No:").lower().strip()=="no"
+        
+        print("Your package requires atleast these packages listed in requirements.txt and install_requires part of setup.cfg file.")
+        print("These are listed by pipreqs")
+        exec("pipreqs --print ./")
+        print("\n\nThese are the packages listed in requirements.txt : ")
+        exec("cat requirements.txt")
+        
+        print("\n\nThese are the packages listed in install_requires part of setup.cfg file : ")
+        with open("setup.cfg","r") as f:
+            flag=False
+            for j in f:
+                if(not j[0].isspace()):
+                    flag=False
+                if(flag):
+                    print(j)
+                if(j.startswith("install_requires")):
+                   flag=True
+        
+        
+        
+        print("Abort now and update requirements.txt setup.cfg file(install_requires and python_requires) if you notice any discrepency")
+        if(check_("","abort","continue")):
+            raise NameError('Aborted as you wished!! \nMake necessary changes on the repo now.')
+        nft_=check_("Are you uploading this package to PyPi for the first time? Yes/No:","no","yes")
         if(nft_):
             with open("./setup.cfg","r") as f:
                 zz=f.read().split("\n")
@@ -104,7 +138,7 @@ def uploadpackage():
         
         
 def main():
-    if(input("Do you already have a github repo for the project? Yes/No:").lower().strip()=="yes"):
+    if(check_("Do you already have a github repo for the project? Yes/No:")):
         uploadpackage()
     else:
         create_package()
