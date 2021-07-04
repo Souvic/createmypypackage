@@ -35,7 +35,7 @@ def create_package():
 
         python_requires=input("Required minimum Python version to run this package please(e.g. 3.6): ")
 
-        rep_url=input("Go to github.com, create an empty repository with project name, copy-paste the link here please: ")
+        rep_url=input("Go to github.com, create an empty repository(without any file) with project name, copy-paste the link here please: ")
         if(not rep_url.lower().endswith(".git")):
             rep_url=rep_url+".git"
         with open("./package_creator/src/package_name/__init__.py","w") as f:
