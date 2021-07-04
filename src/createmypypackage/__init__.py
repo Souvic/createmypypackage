@@ -17,7 +17,16 @@ def check_(prompt_,yes_="yes",no_="no"):
         else:
             print(f"Your input is neither {yes_} nor {no_}. TRY again carefully..")
         
-
+def format_readme(rep_u):
+    #https://github.com/{user_name_}/{repo_or_package_name_}.git
+    user_name_=rep_u.split("/")[-2]
+    repo_or_package_name_=rep_u.split("/")[-1][:-4]
+    with open("./package_creator/README.MD","r") as f:
+        readme=f.read()
+    readme=readme.format(user_name_=user_name_,repo_or_package_name_=repo_or_package_name_)
+    with open("./package_creator/README.MD","w") as f:
+        f.write(readme)
+    
 def create_package():
     file_path=os.path.abspath(os.path.expanduser(input("Give python file location where all functions and import statements are written please: ").strip()))
     if(check_("Will you like to add more python files which are imported by the main file? yes/no: ")):
@@ -38,6 +47,7 @@ def create_package():
         rep_url=input("Go to github.com, create an empty repository(without any file) with project name, copy-paste the link here please: ")
         if(not rep_url.lower().endswith(".git")):
             rep_url=rep_url+".git"
+        format_readme(rep_url)
         with open("./package_creator/src/package_name/__init__.py","w") as f:
             f.write(open(file_path,"r").read())
         exec("pipreqs ./package_creator/")
