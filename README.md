@@ -39,7 +39,12 @@ pip3 install createmypypackage
 pip3 install git+https://github.com/Souvic/createmypypackage.git
 ```
 
-## Example Usage
+# One interactive command with easy-to-follow prompts to create/upload/update them all!
+```
+cmpp
+```
+#### cmpp is shorthand of _createmypypackage_
+#### You can use _createmypypackage_ as the command also with same results
 
 ### To make a new package and upload to github from a some/one python file(s):
 1. Run the command _cmpp (and just follow the interactive framework forgetting the lines\[2,3,4\] written below)
@@ -47,12 +52,6 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 3. Follow the instructions that will appear.
 4. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
 
-# One command to create/upload/update them all
-```
-cmpp
-```
-#### cmpp is shorthand of _createmypypackage_
-#### You can use _createmypypackage_ as the command also with same results
 
 ### To update/upload a package to PyPi which already has a GitHub repo:
 1. Make all necessary changes in the python files(location: src/packagename/) in the github repo.
