@@ -21,7 +21,7 @@ def check_(prompt_,yes_="yes",no_="no"):
 def create_package():
     file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: ").strip())
     if(check_("Will you like to add more python files which are imported by the main file? yes/no: ")):
-        extra_file_paths=[i for i in input("Give the location of extra_files seperated by space : ").split() if(i!="")]
+        extra_file_paths=set([i for i in input("Give the location of extra_files seperated by space : ").split() if(i!="")])
     else:
         extra_file_paths=[]
     with tempfile.TemporaryDirectory() as tmpdirname:
