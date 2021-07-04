@@ -85,7 +85,7 @@ def uploadpackage():
         os.chdir(dir_)
         exec(f"rm -rf ./dist")
         
-        print("\n\n\n_____________________________\n\nYour package requires atleast these packages listed in requirements.txt and install_requires part of setup.cfg file.")
+        print("\n\n\n_____________________________IMPORTANT________________________________\n\nYour package requires atleast these packages listed in requirements.txt and install_requires part of setup.cfg file.")
         print("These are listed by pipreqs")
         exec("pipreqs --print ./")
         print("\n\nThese are the packages listed in requirements.txt : ")
@@ -105,7 +105,7 @@ def uploadpackage():
         
         print(tempprint)
         print("If you notice any discrepency, abort now and update requirements.txt setup.cfg file(install_requires and python_requires).\n")
-        if(check_("Abort/continue? Write 'abort' to stop exeution or 'continue' to go ahead uploading with current settings : ","abort","continue")):
+        if(check_("Abort/continue? (see above why..) Write 'abort' to stop exeution or 'continue' to go ahead uploading with current settings : ","abort","continue")):
             raise NameError('Aborted as you wished!! \nMake necessary changes on the repo now.')
         nft_=check_("Are you uploading this package to PyPi for the first time? yes/no: ","no","yes")
         if(nft_):
