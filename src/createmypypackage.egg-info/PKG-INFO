@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: createmypypackage
-Version: 1.0.1
+Version: 1.0.2
 Summary: One command simplest way to make and upload a python package!
 Home-page: https://github.com/Souvic/createmypypackage.git
 Author: Souvic Chakraborty
@@ -19,7 +19,7 @@ License-File: LICENSE
 [![License: MIT](https://img.shields.io/github/license/Souvic/createmypypackage)](https://opensource.org/licenses/MIT)
 [![stars](https://img.shields.io/github/stars/Souvic/createmypypackage)]()
 [![Github All Releases](https://img.shields.io/github/downloads/huggingface/transformers/total.svg)]()
-[![PyPI](https://img.shields.io/pypi/v/createmypypackage)]()
+[![PyPI](https://img.shields.io/pypi/v/createmypypackage)](https://pypi.org/project/createmypypackage/)
 [![python](https://img.shields.io/github/languages/top/Souvic/createmypypackage)]()
 
 [![Build Status](https://scrutinizer-ci.com/g/Souvic/createmypypackage/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Souvic/createmypypackage/build-status/main)
@@ -56,22 +56,23 @@ pip3 install createmypypackage
 pip3 install git+https://github.com/Souvic/createmypypackage.git
 ```
 
-## Example Usage
-### To make a new package and upload to github from a some/one python file(s):
-1. Run the below command.
-2. Input yes at the first prompt as you will be questioned.
-3. Follow the instructions that will appear.
-4. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
-# One command to create/upload/update them all
+# One interactive command with easy-to-follow prompts to create/upload/update them all!
 ```
 cmpp
 ```
 #### cmpp is shorthand of _createmypypackage_
 #### You can use _createmypypackage_ as the command also with same results
 
+### To make a new package and upload to github from a some/one python file(s):
+1. Run the command _cmpp (and just follow the interactive framework forgetting the lines\[2,3,4\] written below)
+2. Input yes at the first prompt as you will be questioned.
+3. Follow the instructions that will appear.
+4. Make necessary changes if you have to (e.g. updating README.md file) now on the github repo before submitting to PyPi(by following the upload instruction below)
+
+
 ### To update/upload a package to PyPi which already has a GitHub repo:
 1. Make all necessary changes in the python files(location: src/packagename/) in the github repo.
-2. Run the command (cmpp) as written above to submit to PyPi
+2. Run the command _cmpp (and just follow the interactive framework forgetting the lines\[2,3,4\] written below)
 3. Input no at the first prompt.
 4. Follow the instructions that will appear.
 ### Set up your $HOME/.pypirc file with the passtoken like this to save twine password to avoid typing username and password everytime [Doc Link](https://twine.readthedocs.io/en/latest/#keyring-support)
