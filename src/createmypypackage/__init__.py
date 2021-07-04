@@ -21,7 +21,7 @@ def format_readme(rep_u):
     #https://github.com/{user_name_}/{repo_or_package_name_}.git
     user_name_=rep_u.split("/")[-2]
     repo_or_package_name_=rep_u.split("/")[-1][:-4]
-    with open("./package_creator/README.MD","r") as f:
+    with open("./package_creator/README.md","r") as f:
         readme=f.read()
     readme=readme.format(user_name_=user_name_,repo_or_package_name_=repo_or_package_name_)
     with open("./package_creator/README.MD","w") as f:
