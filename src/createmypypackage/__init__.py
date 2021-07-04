@@ -87,7 +87,7 @@ def uploadpackage():
         exec("pipreqs --print ./")
         print("\n\nThese are the packages listed in requirements.txt : ")
         exec("cat requirements.txt")
-        
+        tempprint=""
         print("\n\nThese are the packages listed in install_requires part of setup.cfg file : ")
         with open("setup.cfg","r") as f:
             flag=False
@@ -95,13 +95,13 @@ def uploadpackage():
                 if(not j[0].isspace()):
                     flag=False
                 if(flag):
-                    print(j)
+                    tempprint+=j.strip()
                 if(j.startswith("install_requires")):
                    flag=True
         
         
-        
-        print("Abort now and update requirements.txt setup.cfg file(install_requires and python_requires) if you notice any discrepency")
+        print(tempprint)
+        print("If you notice any discrepency, abort now and update requirements.txt setup.cfg file(install_requires and python_requires).\n")
         if(check_("Abort/continue? Write 'abort' to stop exeution or 'continue' to go ahead uploading with current settings : ","abort","continue")):
             raise NameError('Aborted as you wished!! \nMake necessary changes on the repo now.')
         nft_=check_("Are you uploading this package to PyPi for the first time? yes/no: ","no","yes")
