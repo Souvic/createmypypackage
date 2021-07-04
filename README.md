@@ -49,7 +49,8 @@ pip3 install git+https://github.com/Souvic/createmypypackage.git
 ```
 cmpp
 ```
-#### cmpp is shorthand of _createmypypackage
+#### cmpp is shorthand of _createmypypackage_
+#### You can use _createmypypackage_ as the command also with same results
 
 ### To update/upload a package to PyPi which already has a GitHub repo:
 1. Make all necessary changes in the python files(location: src/packagename/) in the github repo.
