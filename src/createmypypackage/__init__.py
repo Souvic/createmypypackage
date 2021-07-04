@@ -127,7 +127,7 @@ def uploadpackage():
                 f.write("\n".join(zz))
         exec("python3 -m build")
         exec("git add -A")
-        exec("git commit -m 'First commit in the new package'")
+        exec("git commit -m 'New version is released now'")
         if(nft_):
             exec(f"git tag v{new_version_number}")
             exec(f"git push origin  v{new_version_number}")
@@ -137,7 +137,7 @@ def uploadpackage():
         exec("git push -u origin main")
         print("Updated github repo!")
         exec("twine upload dist/*")
-        print("Updated to PyPi!")
+        print("Updated to PyPi! New version has been released!")
         
         
 def main():
