@@ -95,7 +95,7 @@ def uploadpackage():
                 if(not j[0].isspace()):
                     flag=False
                 if(flag):
-                    tempprint+=j.strip()
+                    tempprint+=j.strip()+"\n"
                 if(j.startswith("install_requires")):
                    flag=True
         
