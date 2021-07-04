@@ -19,9 +19,9 @@ def check_(prompt_,yes_="yes",no_="no"):
         
 
 def create_package():
-    file_path=os.path.abspath(input("Give python file location where all functions and import statements are written please: ").strip())
+    file_path=os.path.abspath(os.path.expanduser(input("Give python file location where all functions and import statements are written please: ").strip()))
     if(check_("Will you like to add more python files which are imported by the main file? yes/no: ")):
-        extra_file_paths=set([os.path.abspath(i) for i in input("Give the location of extra_files seperated by space : ").split() if(i!="")])
+        extra_file_paths=set([os.path.abspath(os.path.expanduser(i)) for i in input("Give the location of extra_files seperated by space : ").split() if(i!="")])
     else:
         extra_file_paths=[]
     with tempfile.TemporaryDirectory() as tmpdirname:
@@ -141,7 +141,7 @@ def uploadpackage():
         
         
 def main():
-    if(check_("Do you already have a github repo for the project? yes/no: ")):
+    if(check_("Have you already uploaded the project once to github repo ? yes/no: ")):
         uploadpackage()
     else:
         create_package()
